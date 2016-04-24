@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>OSD 2016 - Open Source</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/osd2016.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,86 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section data-background-image="images/osd_2016-bg-title-hd.png"
+          data-background-color="#231F27"
+          data-background-transition="slide"
+          class="dark">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <address id="title">
+            Open Source<br/>
+            Krzysztof Suszyński<br/>
+            Centralny Ośrodek Informatyki
+          </address>
+        </section>
+
+        <section>
+          <h2>Krzysztof Suszyński</h2>
+          <ul>
+            <li><img src="images/ksuszynski-photo.jpg"
+              style="float: right; margin: 1em"
+              class="boxed" />
+              Główny programista w COI / Trener w SAGES</li>
+            <li>Ewangelizuje Javą i Puppetem</li>
+            <li>Publikacje OSS @ Gov</li>
+            <li>Wiele publikacji OSS w różnych językach: java, ruby, javascript</li>
+          </ul>
+          <img src="images/github-contrib.png" class="boxed" />
+        </section>
+        <section>
+          <section>
+            <img src="images/logos/OpenSource.png" height="600px" />
+          </section>
+          <section>
+            <h1>O czym opowiem?</h1>
+            <ul>
+              <li>Czy jest Open Source?</li>
+              <li class="fragment">Jakie zalety ma publikowanie OSS?</li>
+              <li class="fragment">Jak wprowadzić publikowanie OSS w firmie?</li>
+              <li class="fragment">Co zyskaliśmy w pl.ID dzięki publikowaniu OSS?</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Dla kogo ta prezentacja?</h1>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Open Source vs Free Software</h1>
+          </section>  
+        </section>
+
+        <!--
+          * Kim jestem?
+          * COI
+          * O czym będzie?
+            * Czym jest OSS?
+            * Jakie zalety ma publikowanie OSS
+            * Jak wprowadzić publikowanie OSS
+            * Co zyskaliśmy w pl.ID dzięki publikowaniu OSS
+          * Do kogo skierowana jest prezentacja?
+          * Po co publikować OSS?
+            * Mierzalne zyski
+            * Nie mierzalne zyski
+          * OSS a wolne oprogramowanie
+          * Co zyskaliśmy w pl.ID dzięki publikowaniu OSS
+            * wiedza i potwierdzenie poprawności
+            * zgłoszenia błędów i poprawki PR
+            * projekt się udał
+          * Co warto publikować a czego nie?
+          * Kiedy publikować?
+          * Jak wprowadzić publikowanie OSS w swojej organizacji?
+            * Jak wybrać fragmenty do opublikowania?
+            * Jak przekonać zespół że warto?
+            * Jak przekonać szefów że warto?
+            * Na jakie przeszkody się przygotować?
+          * Podsumowanie
+        -->
 			</div>
 		</div>
 
@@ -35,14 +113,21 @@
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+        controls: true,
+				progress: true,
 				history: true,
+				center: true,
+        zoomKey: 'ctrl',
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true }
 				]
 			});
 		</script>

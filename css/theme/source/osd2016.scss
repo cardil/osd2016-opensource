@@ -1,0 +1,66 @@
+/**
+ * Beige theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$darkBackground: #231F27;
+$mainColor: #333;
+$headingColor: #333;
+$invertColor: #ddd;
+$headingTextShadow: none;
+$backgroundColor: #e9f1d4;
+$linkColor: #8ca544;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(79, 64, 28, 0.99);
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #b4d457, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( #e9f1d4, rgba(255,255,255,1) );
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Custom
+
+.reveal .dark {
+  color: $invertColor;
+}
+
+.reveal address#title {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.reveal .progress {
+  height: 10px;
+}
+
+.reveal section img {
+  border: none;
+  padding: 0.3em;
+  background: none;
+  box-shadow: none;
+}
+
+.reveal section img.boxed {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
