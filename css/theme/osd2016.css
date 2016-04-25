@@ -290,12 +290,14 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
-.reveal .dark {
-  color: #ddd; }
+.reveal .dark * {
+  color: #eee; }
 
-.reveal address#title {
-  text-align: left;
-  font-size: 1.2em; }
+.reveal .title {
+  text-align: left; }
+
+.reveal .vspace {
+  padding-top: 11em; }
 
 .reveal .progress {
   height: 10px; }
@@ -309,3 +311,14 @@ body {
 .reveal section img.boxed {
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+.reveal table td, .reveal table th {
+  text-align: center;
+  vertical-align: middle; }
+
+.reveal mark {
+  border-radius: 0.2em;
+  padding: 0 0.2em; }
+
+.reveal mark.important {
+  background-color: rgba(50, 250, 50, 0.9); }

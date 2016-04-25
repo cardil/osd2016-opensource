@@ -21,7 +21,7 @@
 $darkBackground: #231F27;
 $mainColor: #333;
 $headingColor: #333;
-$invertColor: #ddd;
+$invertColor: #eee;
 $headingTextShadow: none;
 $backgroundColor: #e9f1d4;
 $linkColor: #8ca544;
@@ -40,13 +40,16 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #b4d457, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 
 // Custom
 
-.reveal .dark {
+.reveal .dark * {
   color: $invertColor;
 }
 
-.reveal address#title {
+.reveal .title {
   text-align: left;
-  font-size: 1.2em;
+}
+
+.reveal .vspace {
+  padding-top: 11em;
 }
 
 .reveal .progress {
@@ -63,4 +66,18 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #b4d457, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 .reveal section img.boxed {
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal table td, .reveal table th {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.reveal mark {
+	border-radius: 0.2em;
+	padding: 0 0.2em;
+}
+
+.reveal mark.important {
+	background-color: rgba(50, 250, 50, 0.9);
 }
