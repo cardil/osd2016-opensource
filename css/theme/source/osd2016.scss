@@ -78,6 +78,10 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #b4d457, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 	padding: 0 0.2em;
 }
 
+.reveal .dark mark {
+  color: $mainColor;
+}
+
 .reveal mark.important {
 	background-color: rgba(50, 250, 50, 0.9);
 }

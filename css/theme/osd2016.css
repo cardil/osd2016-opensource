@@ -320,5 +320,8 @@ body {
   border-radius: 0.2em;
   padding: 0 0.2em; }
 
+.reveal .dark mark {
+  color: #333; }
+
 .reveal mark.important {
   background-color: rgba(50, 250, 50, 0.9); }
