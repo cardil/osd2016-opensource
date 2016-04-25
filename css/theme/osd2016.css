@@ -309,8 +309,7 @@ body {
   box-shadow: none; }
 
 .reveal section img.boxed {
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  background: rgba(255, 255, 255, 0.8); }
 
 .reveal table td, .reveal table th {
   text-align: center;
